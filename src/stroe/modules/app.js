@@ -23,13 +23,13 @@ const app = {
             Cookie.set('sidebarStatus',0);
             state.sidebar.withoutAnimation = withoutAnimation
         },
-        actions:{
-            toggleSldeBar({commit}){
-                commit('TOGGLE_SIDEBAR');
-            },
-            closeSideBar({commit},{withoutAnimation}){
-                commit('CLOSE_SIDEBAR',withoutAnimation);
-            }
+    },
+    actions:{
+        toggleSldeBar({commit}){
+            commit('TOGGLE_SIDEBAR');
+        },
+        closeSideBar({commit},{withoutAnimation}){
+            commit('CLOSE_SIDEBAR',withoutAnimation);
         }
     }
 }

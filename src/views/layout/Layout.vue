@@ -1,7 +1,7 @@
 <template>
     <div class="app-wrapper">
         <div class="drawer-bg">
-            <side-bar class="sidebar-container"></side-bar>
+            <sidebar class="sidebar-container"></sidebar>
             <div class="mian-container">
                 <nav-bar/>
                 <tag-view/>
@@ -15,7 +15,7 @@
 // import { Navbar, Sidebar, AppMain, TagsView } from './components'
 import AppMain from './components/AppMain'
 import NavBar from './components/NavBar'
-import SideBar from './components/SideBar'
+import Sidebar from './components/Sidebar/index'
 import TagView from './components/TagView'
 export default {
     created(){
@@ -23,7 +23,7 @@ export default {
     components:{
         AppMain,
         NavBar,
-        SideBar,
+        Sidebar,
         TagView
     }
 }
